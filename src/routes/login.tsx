@@ -22,7 +22,7 @@ function LoginPage() {
     login();
     const target = redirect || "/dashboard";
     setRedirect(null);
-    navigate({ to: target as any, search: target === "/dashboard" ? { tab: "home" } : undefined });
+    navigate({ to: target as any, search: (target === "/dashboard" ? { tab: "home" } : undefined) as any });
   };
 
   return (
